@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match"
+    android:background="@android:color/black"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/padding"
+            android:paddingEnd="@dimen/padding"
+            android:text="@string/photos"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko_bold" />
+
+        <com.devika.blloccodingchallenge.task1.AutoFitRecyclerView
+            android:id="@+id/folderRecycler"
+            style="@style/match"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/folder_column_width" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        style="@style/wrap"
+        android:layout_gravity="center"
+        android:text="@string/empty"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

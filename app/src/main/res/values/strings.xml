@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BllocCodingChallenge</string>
+    <string name="empty">No Images on this device</string>
+    <string name="permission_denied">Read Permission Denied</string>
+    <string name="photos">Photos</string>
+    <string name="task_1">Task 1</string>
+    <string name="task_2">Task 2</string>
 </resources>
