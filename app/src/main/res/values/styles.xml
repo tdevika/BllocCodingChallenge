@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Custom.Widget.SwitchCompat" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorAccent">@color/switch_ripple_color</item>
+        <item name="colorControlHighlight">@color/switch_ripple_color</item>
+    </style>
 </resources>
