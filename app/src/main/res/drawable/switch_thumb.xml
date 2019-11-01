@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/switch_selector_padding"
+        android:left="@dimen/switch_selector_padding"
+        android:right="@dimen/switch_selector_padding"
+        android:top="@dimen/switch_selector_padding">
+        <shape
+            android:shape="ring"
+            android:thickness="1.2dp"
+            android:useLevel="false">
+            <solid android:color="@android:color/white" />
+            <size
+                android:width="@dimen/switch_thumb_width"
+                android:height="@dimen/switch_thumb_height" />
+        </shape>
+    </item>
+</layer-list>
